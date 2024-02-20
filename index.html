@@ -1,0 +1,68 @@
+<!-- atalho para criar e estrutura HTML { HTML:5 }  -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!-- atalho para vincular o CSS ao HTML e estrutura HTML { lnk:css }  -->
+    <title>Mario Bros</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <img src="./img/logo-header.png" alt="logo mario">
+        <a> Home </a>
+        <a> Nossos Serviços</a>
+        <a> Fale Conosco</a>
+    </div>
+
+    <div class="caixa-mae">
+
+        <div class="caixa-principal">
+
+            <img src="./img/logo.png" alt="logo do mario bros" class="logo-mario">
+
+            <p> 🧰 Encanadores Mario & Luigi - Resolvendo seus problemas Hidráulicos com Estilo! 🛠️ </p>
+            <p>Você já se encontrou em uma situação de emergência com encanamento? Vazamentos inesperados, canos
+                entupidos ou torneiras que não param de pingar? Não se preocupe, porque estamos aqui para salvar o dia!
+                Apresentamos a vocês os encanadores mais famosos do Reino dos Cogumelhos - Mario e Luigi! </p>
+
+            <button>Entre em contato </button>
+
+        </div>
+
+        <div>
+            <img src="./img/mario.png" alt="logo mario e luigi" class="imagem-mario-luigi">
+        </div>
+
+    </div>
+
+
+    <div class="caixa-video">
+        <video src="./img/video.mp4" autoplay muted loop> </video>
+        <!-- autoplay = vido ja inicia no play /  muted = sem o som /  loop = o video fica sempre rodando -->
+        <div class="mascara"> </div>
+    </div>
+
+    <a href="https://api.whatsapp.com/send?phone=550099999999&text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento."
+        class="link-whatsapp">
+        <img src="./img/whatsapp.png" alt="link para o whatsApp">
+    </a>
+
+    <div class="mascara-formulario"> </div>
+
+    <form class="formulario-fale-conosco"> <!-- iniciando o formulario  -->
+        <input placeholder="Nome">
+        <input placeholder="Telefone">
+        <input placeholder="Email">
+        <textarea placeholder="Digite o seu problema aqui..." > </textarea>
+        <button class="botao-solicitar-orcamento"> Pedir orçamento </button>
+
+    </form>
+
+
+</body>
+
+</html>

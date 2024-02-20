@@ -1,0 +1,245 @@
+/*  */
+
+* {
+    /* estilos globai - estamos retirando os estilos aplicados por padrão pelo navegador */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.logo-mario {
+    height: 200px;
+
+}
+
+
+button {
+    color: white;
+    /*cor da letra */
+    background-color: #c51111;
+    /*cor do fundo */
+    border-radius: 3px;
+    /* cantos arredondadas */
+    border: none;
+    /* retira a cor da borda */
+    width: 200px;
+    /*ajusta a largura */
+    height: 50px;
+    /* ajusta a largura */
+    cursor: pointer;
+    /*inclui o cursor de mão ao passar o mouse no botão do site  */
+    text-transform: uppercase;
+    /* deixa o texto do botão maiusculo */
+    font-weight: bold;
+    /* texto negrito  */
+    margin-top: 30px;
+}
+
+
+.imagem-mario-luigi {
+    height: 500px;
+    /* ajusta a largra da img */
+
+}
+
+body {
+    height: 100vh;
+    /* ocupa toda a tela, independente do tamanho dela  */
+
+}
+
+.caixa-mae {
+    display: flex;
+    /*por padrão ele coloca os itens um do lado do outro  */
+    align-items: center;
+    /* alinha os itens ao centro */
+    /*justify-content: space-between;   alinhar/justificar os elementos deixando um espaço entre eles   */
+    justify-content: space-around;
+    /* alinhar/justificar os elementos deixando um espaço entre eles, porem um espaço menor   */
+    padding: 100px;
+    /* espaçamento interno */
+    height: 100vh;
+    /* ocupa toda a tela, independente do tamanho dela  */
+
+}
+
+.caixa-principal {
+    width: 40%;
+
+}
+
+.caixa-video {
+    position: fixed;
+    /*deixa o video fixo na pagina  */
+    top: 0;
+    /* faz o video ficar posicionado a cima */
+    z-index: -1;
+    /* faz o video ir para tras dos demais elementos */
+
+}
+
+video {
+    min-height: 100%;
+    /* o minimo que ele vai ocupar é toda a altura da tela */
+    min-width: 100%;
+    /* o minimo que ele vai ocupar é toda a largura da tela */
+    position: fixed;
+    /* posicao fixa  */
+    top: 0;
+    /* topo da pagina */
+}
+
+.mascara {
+    height: 100%;
+    /* ajusta a altura e ocupa toda a tela  */
+    width: 100%;
+    /* ajusta a largura e ocupa toda a tela */
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    /* cria um gradiente  */
+
+    position: fixed;
+    /* mantem uma posição fixa */
+    top: 0;
+    /*define que a posição inicia no topo  */
+
+
+}
+
+p {
+    color: white;
+    /* cor da letra */
+    font-size: 21px;
+    /* ajusta o tamanho do texto*/
+    line-height: 30px;
+    /* espaçamento das linhas */
+
+}
+
+.link-whatsapp img {
+    /* dessa forma estilizamos a imagem que esta dentro da classe link-whatsapp */
+    height: 60px;
+    /* ajuste na largura */
+    position: fixed;
+    /* posição fixa na tela */
+    right: 20px;
+    /* direcionando a direita   */
+    bottom: 20px;
+    /* distanciamos o elemento da borda da pagina */
+
+}
+
+.header {
+    display: flex;
+    /*por padrão ele coloca os itens um do lado do outro  */
+    align-items: center;
+    /* alinha os itens ao centro */
+    gap: 30px;
+    /*distanciamento entre os itens  */
+    margin: 30px;
+
+
+}
+
+.header img {
+    height: 60px;
+    /*largura da imagem  */
+
+}
+
+.header a {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+
+
+}
+
+.header a:hover {
+    /*evento hover, sempre que passar o mouse no link ele vai fazer algo*/
+    color: #c51111;
+    /* mudar de cor */
+    transition: 1s ease-in-out;
+    /* 1º qual o tempo da transição, 2º em qual evento ele vai aplicar (nesse exemplo como não colocamos nada ele aplica a tudo), 3º qual o tipo da transição */
+    font-size: 26px;
+    /* tamanho da letra */
+
+}
+
+button:hover {
+    opacity: 0.8;
+    /* Opacidade ao passar o mouse */
+    background-color: rgb(3, 3, 88);
+    /* Cor de fundo ao passar o mouse */
+
+
+}
+
+.formulario-fale-conosco {
+    background-color: white;
+    /*cor de fundo */
+    display: flex;
+    /*por padrão ele coloca os itens um do lado do outro, sem ele nao conseguiria usar o flex-direction  */
+    gap: 20px;
+    flex-direction: column;
+    /* deixa os instens um abaixo do outro  */
+    position: fixed;
+    top: 30%;
+    left: -300px;
+    /* deixamos o formulario oculto  */
+    padding: 20px;
+    /* espaçamento interno*/
+    border-radius: 5px;
+    /*bordas arredondadas */
+
+}
+
+input {
+    height: 48px;
+    /* altura  */
+    border-radius: 5px;
+    /*bordas arredondadas */
+    border: 1px solid gray;
+    /*1º espessura da borda, 2º tipo, 3º cor */
+    padding-left: 5px;
+    /* espaçamento interno para afastar o texto da borda do input */
+    outline-color: #18d80f;
+    /*cor do input ao clicar nele para digitar*/
+
+}
+
+textarea {
+    width: 270px;
+    /*largura */
+    height: 100px;
+    /* altura */
+    border-radius: 5px;
+    /*bordas arredondadas */
+    border: 1px solid gray;
+    /*1º espessura da borda, 2º tipo, 3º cor */
+    padding-left: 5px;
+    /* espaçamento interno para afastar o texto da borda do input */
+    outline-color: #18d80f;
+    /*cor do input ao clicar nele para digitar*/
+
+}
+
+.botao-solicitar-orcamento {
+
+    margin: auto;
+    /*alinha o botao ao centro */
+
+}
+
+.mascara-formulario {
+    position: fixed;
+    /* posição fixa */
+    top: 0;
+    /* no top da pagina */
+    width: 100vw;
+    /* ocupa toda a largura da tela*/
+    height: 100vh;
+    /*ocupa toda a altura da tela */
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99)15%, rgba(10, 12, 16, 0.7)50%, rgba(10, 12, 16, 0.99)85%);
+
+}
