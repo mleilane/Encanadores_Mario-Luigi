@@ -232,6 +232,8 @@ textarea {
 }
 
 .mascara-formulario {
+    visibility: hidden;
+    /*torna um elemento invisível na tela*/
     position: fixed;
     /* posição fixa */
     top: 0;
