@@ -191,6 +191,8 @@ button:hover {
     /* espaçamento interno*/
     border-radius: 5px;
     /*bordas arredondadas */
+    transition: left 1s ease-in-out;
+    /* 1º em qual evento ele vai aplicar / 2º qual o tempo da transição / 3º qual o tipo da transição */
 
 }
 
@@ -243,5 +245,8 @@ textarea {
     height: 100vh;
     /*ocupa toda a altura da tela */
     background: linear-gradient(109deg, rgba(10, 12, 16, 0.99)15%, rgba(10, 12, 16, 0.7)50%, rgba(10, 12, 16, 0.99)85%);
+    /*cria o  bacgroun da mascara com gradiente  */
+    transition: visibility 1s ease-in-out;
+    /* 1º em qual evento ele vai aplicar / 2º qual o tempo da transição / 3º qual o tipo da transição */
 
 }
