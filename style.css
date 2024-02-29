@@ -151,7 +151,8 @@ p {
     color: white;
     font-size: 24px;
     cursor: pointer;
-    text-decoration: none; /* tira a linha que aparece em baixo dos links */
+    text-decoration: none;
+    /* tira a linha que aparece em baixo dos links */
 
 
 }
@@ -170,7 +171,7 @@ p {
 button:hover {
     opacity: 0.8;
     /* Opacidade ao passar o mouse */
-    background-color: rgb(3, 3, 88);
+    background-color: green;
     /* Cor de fundo ao passar o mouse */
 
 
@@ -220,7 +221,7 @@ textarea {
     /*bordas arredondadas */
     border: 1px solid gray;
     /*1º espessura da borda, 2º tipo, 3º cor */
-    padding-left: 5px;
+    padding-left: 4px;
     /* espaçamento interno para afastar o texto da borda do input */
     outline-color: #18d80f;
     /*cor do input ao clicar nele para digitar*/
@@ -270,7 +271,8 @@ textarea {
         /* alterando a direçaõ das imagens para ficar uma abaixo da outra */
         padding: 10px;
         /* ajustando o  espaço entre o conteúdo do elemento e suas bordas */
-        justify-content: flex-start; /*alinhar os itens flexíveis no início do contêiner */
+        justify-content: flex-start;
+        /*alinhar os itens flexíveis no início do contêiner */
 
     }
 
@@ -283,24 +285,31 @@ textarea {
         /* altera a direção dos intens, deixando um abaixo do outro */
     }
 
-    .imagem-mario-luigi{
-        width: 80vw; /*vai ocupar 80% da tela */
-        height: auto; /*altura automatica */
+    .imagem-mario-luigi {
+        width: 80vw;
+        /*vai ocupar 80% da tela */
+        height: auto;
+        /*altura automatica */
     }
 
     .header {
-        margin: 10px; /*reduzimos a margem da classe header (div onde ficam os links) */
+        margin: 10px;
+        /*reduzimos a margem da classe header (div onde ficam os links) */
         display: flex;
-        align-items: center; /* alinha os itens ao centro (vertical) */
-        justify-content: center; /* alinha os itens ao centro (horizontal) */
+        align-items: center;
+        /* alinha os itens ao centro (vertical) */
+        justify-content: center;
+        /* alinha os itens ao centro (horizontal) */
     }
 
-    .header img{
-        display: none; /* retiramos a imagem que tem do lado dos links  */
+    .header img {
+        display: none;
+        /* retiramos a imagem que tem do lado dos links  */
     }
 
-    .header a{
-        font-size: 20px; /*alterando o tamanho da fonte */
+    .header a {
+        font-size: 20px;
+        /*alterando o tamanho da fonte */
 
     }
 

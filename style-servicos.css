@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
 
 
@@ -15,26 +15,31 @@
     gap: 30px;
     /*distanciamento entre os itens  */
     margin: 30px;
- 
+
 
 }
 
-.titulo-geral-servicos h1{
+.titulo-geral-servicos h1 {
     margin: 0;
 }
 
 
-.titulo-geral-servicos{
+.titulo-geral-servicos {
 
     color: white;
-    display: flex; /* Adiciona um display flex para permitir o alinhamento */
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
-    margin: 0; /* Define a margem como 0 para remover qualquer espaçamento adicional */
+    display: flex;
+    /* Adiciona um display flex para permitir o alinhamento */
+    justify-content: center;
+    /* Centraliza o conteúdo horizontalmente */
+    margin: 0;
+    /* Define a margem como 0 para remover qualquer espaçamento adicional */
+    transform: translateX(-53px);
+    /* Move o item 10 pixels para a direita */
+    margin-bottom: 40px;
+    /* Adiciona margem inferior */
 
 
 }
-
-
 
 
 .caixa-video {
@@ -74,7 +79,6 @@
     top: 0;
     /*define que a posição inicia no topo  */
 
-
 }
 
 .header img {
@@ -87,83 +91,313 @@
     color: white;
     font-size: 24px;
     cursor: pointer;
-    text-decoration: none; /* tira a linha que aparece em baixo dos links */
+    text-decoration: none;
+    /* tira a linha que aparece em baixo dos links */
 
 }
+
+.header a:hover {
+    /*evento hover, sempre que passar o mouse no link ele vai fazer algo*/
+    color: #c51111;
+    /* mudar de cor */
+    transition: 1s ease-in-out;
+    /* 1º qual o tempo da transição, 2º em qual evento ele vai aplicar (nesse exemplo como não colocamos nada ele aplica a tudo), 3º qual o tipo da transição */
+    font-size: 26px;
+    /* tamanho da letra */
+
+}
+
+
+.nossos-servicos {
+    transition: left 2s ease-in-out;
+    /* 1º em qual evento ele vai aplicar / 2º qual o tempo da transição / 3º qual o tipo da transição */
+}
+
 
 .body-content {
     display: flex;
-    justify-content: center; /* Centraliza o conteúdo na horizontal */
-    align-items: center; /* Centraliza o conteúdo na vertical */
-    min-height: 80vh; /* Faz com que o corpo da página ocupe pelo menos a altura total da tela */
+    justify-content: center;
+    /* Centraliza o conteúdo na horizontal */
+    align-items: center;
+    /* Centraliza o conteúdo na vertical */
+    min-height: 80vh;
+    /* Faz com que o corpo da página ocupe pelo menos a altura total da tela */
 }
 
 .container {
-    display: flex; /* Define o layout como flexível */
-    flex-direction: row; /* Alinha os elementos em uma coluna */
-    align-items: center; /* Centraliza os elementos na horizontal */
-    justify-content: center; /* Centraliza os elementos na horizontal */
-    width: 100%; /* Ocupa toda a largura disponível */
-    max-width: 1200px; /* Define uma largura máxima para o container */
-    margin: 0 auto; /* Centraliza o container na página */
-    padding: 0 20px; /* Adiciona algum espaçamento interno opcional */
+    display: flex;
+    /* Define o layout como flexível */
+    flex-direction: row;
+    /* Alinha os elementos em uma coluna */
+    align-items: center;
+    /* Centraliza os elementos na horizontal */
+    justify-content: center;
+    /* Centraliza os elementos na horizontal */
+    width: 100%;
+    /* Ocupa toda a largura disponível */
+    max-width: 1200px;
+    /* Define uma largura máxima para o container */
+    margin: 0 auto;
+    /* Centraliza o container na página */
+    padding: 0 20px;
+    /* Adiciona algum espaçamento interno opcional */
 
 }
 
 .lista-servicos {
     list-style: none;
     padding: 0;
-    margin: 0;   
-    width: 500px; /* Defina a largura da lista de serviços */
-    
-    
-  }
+    margin: 0;
+    width: 500px;
+    /* Defina a largura da lista de serviços */
 
-  
-  
-  .servico {
+
+}
+
+
+.servico {
     border: 1px solid #ccc;
     padding: 10px;
     margin-bottom: 10px;
-    width: 80%; /* Ocupa 80% da largura disponível */
-    background-color: #ccc; 
+    width: 80%;
+    /* Ocupa 80% da largura disponível */
+    background-color: #ccc;
     cursor: pointer;
     border-radius: 10px;
     font-size: 22px;
-    
-  }
-  
-  .servico h2 {
+
+}
+
+.servico h2 {
     font-size: 23px;
     font-weight: bold;
     margin-top: 0;
-    transition: opacity 0.3s; /* Adiciona uma transição suave */
-    display: flex; /* Adiciona um display flex para permitir o alinhamento */
-    align-items: center; /* Centraliza o conteúdo verticalmente */
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
-    
+    transition: opacity 0.3s;
+    /* Adiciona uma transição suave */
+    display: flex;
+    /* Adiciona um display flex para permitir o alinhamento */
+    align-items: center;
+    /* Centraliza o conteúdo verticalmente */
+    justify-content: center;
+    /* Centraliza o conteúdo horizontalmente */
 
-  }
 
-  .servico:hover {
-    opacity: 0.8; /* Reduz a opacidade ao passar o mouse */
 }
 
-  .servico p {
+.servico:hover {
+    opacity: 0.8;
+    /* Reduz a opacidade ao passar o mouse */
+}
+
+.servico p {
     margin-top: 5px;
-    
-    
+    display: flex;
+    /* Adiciona um display flex para permitir o alinhamento */
+    width: 100%;
+    /* Defina uma largura para o parágrafo */
+    text-align: center;
+    /* Centralize o texto horizontalmente */
 
-  }
+}
 
-  /* Adicione uma classe para ocultar o texto por padrão */
+/* Adicione uma classe para ocultar o texto por padrão */
 .lista-servicos .ativo {
     display: none;
 }
 
-  .imagem-mario-luigi {
+.imagem-mario-luigi {
     height: 500px;
     /* ajusta a largra da img */
 
 }
 
+.formulario-fale-conosco {
+    background-color: white;
+    /*cor de fundo */
+    display: flex;
+    /*por padrão ele coloca os itens um do lado do outro, sem ele nao conseguiria usar o flex-direction  */
+    gap: 20px;
+    flex-direction: column;
+    /* deixa os instens um abaixo do outro  */
+    position: fixed;
+    top: 30%;
+    left: -300px;
+    /* deixamos o formulario oculto  */
+    padding: 20px;
+    /* espaçamento interno*/
+    border-radius: 5px;
+    /*bordas arredondadas */
+    transition: left 1s ease-in-out;
+    /* 1º em qual evento ele vai aplicar / 2º qual o tempo da transição / 3º qual o tipo da transição */
+
+}
+
+input {
+    height: 48px;
+    /* altura  */
+    border-radius: 5px;
+    /*bordas arredondadas */
+    border: 1px solid gray;
+    /*1º espessura da borda, 2º tipo, 3º cor */
+    padding-left: 5px;
+    /* espaçamento interno para afastar o texto da borda do input */
+    outline-color: #18d80f;
+    /*cor do input ao clicar nele para digitar*/
+
+}
+
+textarea {
+    width: 270px;
+    /*largura */
+    height: 100px;
+    /* altura */
+    border-radius: 5px;
+    /*bordas arredondadas */
+    border: 1px solid gray;
+    /*1º espessura da borda, 2º tipo, 3º cor */
+    padding-left: 4px;
+    /* espaçamento interno para afastar o texto da borda do input */
+    outline-color: #18d80f;
+    /*cor do input ao clicar nele para digitar*/
+
+}
+
+.botao-solicitar-orcamento {
+
+    margin: auto;
+    /*alinha o botao ao centro */
+
+}
+
+button {
+    color: white;
+    /*cor da letra */
+    background-color: #c51111;
+    /*cor do fundo */
+    border-radius: 3px;
+    /* cantos arredondadas */
+    border: none;
+    /* retira a cor da borda */
+    width: 200px;
+    /*ajusta a largura */
+    height: 50px;
+    /* ajusta a largura */
+    cursor: pointer;
+    /*inclui o cursor de mão ao passar o mouse no botão do site  */
+    text-transform: uppercase;
+    /* deixa o texto do botão maiusculo */
+    font-weight: bold;
+    /* texto negrito  */
+    margin-top: 30px;
+}
+
+button:hover {
+    opacity: 0.8;
+    /* Opacidade ao passar o mouse */
+    background-color: green;
+    /* Cor de fundo ao passar o mouse */
+
+
+}
+
+.link-whatsapp img {
+    /* dessa forma estilizamos a imagem que esta dentro da classe link-whatsapp */
+    height: 60px;
+    /* ajuste na largura */
+    position: fixed;
+    /* posição fixa na tela */
+    right: 20px;
+    /* direcionando a direita   */
+    bottom: 20px;
+    /* distanciamos o elemento da borda da pagina */
+
+}
+
+.mascara-formulario {
+    visibility: hidden;
+    /*torna um elemento invisível na tela*/
+    position: fixed;
+    /* posição fixa */
+    top: 0;
+    /* no top da pagina */
+    width: 100vw;
+    /* ocupa toda a largura da tela*/
+    height: 100vh;
+    /*ocupa toda a altura da tela */
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99)15%, rgba(10, 12, 16, 0.7)50%, rgba(10, 12, 16, 0.99)85%);
+    /*cria o  bacgroun da mascara com gradiente  */
+    transition: visibility 1s ease-in-out;
+    /* 1º em qual evento ele vai aplicar / 2º qual o tempo da transição / 3º qual o tipo da transição */
+
+}
+
+/*Aplicando responsividade com media query, vamos criar pontos e identificar onde o site quebra */
+/*sempre deixar o media query no final do css */
+/*MAX --> valor menos que Npx, aplica o css do MEDIA */
+/*MIN --> valor maior que Npx, aplica o css do MEDIA */
+
+@media(max-width:1100px) {
+    /*aqui vamos tratar considerando a largura, ao atingir o valor que especificamos ele vai mudar o nosso css */
+
+    .container {
+        flex-direction: column;
+        /* alterando a direçaõ das imagens para ficar uma abaixo da outra */
+        padding: 10px;
+        /* ajustando o  espaço entre o conteúdo do elemento e suas bordas */
+        justify-content: flex-start;
+        /*alinhar os itens flexíveis no início do contêiner */
+
+    }
+
+    .imagem-mario-luigi {
+        width: 50vw;
+        /*vai ocupar 80% da tela */
+        height: auto;
+        /*altura automatica */
+    }
+
+    .header {
+        margin: 10px;
+        /*reduzimos a margem da classe header (div onde ficam os links) */
+        display: flex;
+        align-items: center;
+        /* alinha os itens ao centro (vertical) */
+        justify-content: center;
+        /* alinha os itens ao centro (horizontal) */
+    }
+
+    .header img {
+        display: none;
+        /* retiramos a imagem que tem do lado dos links  */
+    }
+
+    .header a {
+        font-size: 20px;
+        /*alterando o tamanho da fonte */
+
+    }
+
+    .titulo-geral-servicos h1 {
+        font-size: 22px;
+        margin-top: 70px;
+    }
+
+    .lista-servicos {
+        margin-left: auto;
+        /* Centraliza na horizontal */
+        margin-right: auto;
+        /* Centraliza na horizontal */
+        width: 80vw;
+        /* Defina a largura da lista de serviços */
+        max-width: 500px;
+        /* Defina a largura máxima da lista de serviços */
+        font-size: 20px;
+        margin-top: 40px;
+        /* Adiciona margem superior */
+        margin-bottom: 40px;
+        /* Adiciona margem inferior */
+        transform: translateX(78px);
+        /* Move o item 10 pixels para a direita */
+
+    }
+}

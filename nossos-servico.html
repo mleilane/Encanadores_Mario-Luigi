@@ -9,7 +9,8 @@
     <title>Nossos Serviços</title>
 </head>
 
-<body>
+<body class="nossos-servicos">
+
     <div class="header">
         <img src="./img/logo-header.png" alt="logo mario">
         <a href="index.html"> Home </a>
@@ -19,53 +20,75 @@
 
     <div class="body-content">
 
-    <div class="container">
-        <div>
-            <div class="titulo-geral-servicos"> 
-            <h1 > 🛠️ Nossos Serviços </h1>
+        <div class="container">
+            <div>
+                <div class="titulo-geral-servicos">
+                    <h1> 🛠️ Nossos Serviços </h1>
+                </div>
+
+                <ul class="lista-servicos">
+                    <li class="servico">
+                        <h2>Desentupimentos</h2>
+                        <p class="ativo">Desentupimento de pias, ralos, vasos sanitários, tubulações e caixas d'água.
+                        </p>
+                    </li>
+
+                    <li class="servico">
+                        <h2>Reparos</h2>
+                        <p class="ativo">Conserto de vazamentos em canos, torneiras, registros e caixas d'água.</p>
+                    </li>
+
+                    <li class="servico">
+                        <h2>Instalações</h2>
+                        <p class="ativo">Instalação de pias, torneiras, vasos sanitários, chuveiros, boxes e outros
+                            equipamentos
+                            hidráulicos.</p>
+                    </li>
+
+                    <li class="servico">
+                        <h2>Manutenções</h2>
+                        <p class="ativo">Limpeza e manutenção de caixas d'água, filtros e bombas d'água | 
+                            Verificação e reparo de vazamentos em toda a rede hidráulica | 
+                            Realização de serviços preventivos para evitar problemas futuros.
+                        </p>
+                    </li>
+
+                </ul>
             </div>
 
-            <ul class="lista-servicos">
-                <li class="servico">
-                    <h2>Desentupimentos</h2>
-                    <p class="ativo">Desentupimento de pias, ralos, vasos sanitários, tubulações e caixas d'água.</p>
-                </li>
+            <div>
+                <img src="./img/mario.png" alt="logo mario e luigi" class="imagem-mario-luigi">
+            </div>
 
-                <li class="servico">
-                    <h2>Reparos</h2>
-                    <p class="ativo">Conserto de vazamentos em canos, torneiras, registros e caixas d'água.</p>
-                </li>
+            <div class="caixa-video">
+                <video src="./img/video.mp4" autoplay muted loop> </video>
+                <!-- autoplay = vido ja inicia no play /  muted = sem o som /  loop = o video fica sempre rodando -->
+                <div class="mascara"> </div>
+            </div>
 
-                <li class="servico">
-                    <h2>Instalações</h2>
-                    <p class="ativo">Instalação de pias, torneiras, vasos sanitários, chuveiros, boxes e outros
-                        equipamentos
-                        hidráulicos.</p>
-                </li>
+            <a href="https://api.whatsapp.com/send?phone=550099999999&text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento."
+                class="link-whatsapp">
+                <img src="./img/whatsapp.png" alt="link para o whatsApp">
+            </a>
 
-                <li class="servico">
-                    <h2>Manutenções</h2>
-                    <p class="ativo">Limpeza e manutenção de caixas d'água, filtros e bombas d'água;
-                        Verificação e reparo de vazamentos em toda a rede hidráulica;
-                        Realização de serviços preventivos para evitar problemas futuros.
-                    </p>
-                </li>
-
-            </ul>
         </div>
-
-        <div>
-            <img src="./img/mario.png" alt="logo mario e luigi" class="imagem-mario-luigi">
-        </div>
-
-        <div class="caixa-video">
-            <video src="./img/video.mp4" autoplay muted loop> </video>
-            <!-- autoplay = vido ja inicia no play /  muted = sem o som /  loop = o video fica sempre rodando -->
-            <div class="mascara"> </div>
-        </div>
-
     </div>
-</div>
+
+
+    <div class="mascara-formulario" onclick="esconderForm()"> </div>
+
+    <form id="formularioFaleConosco" class="formulario-fale-conosco" action="https://formcarry.com/s/ftwWdc5NE9k"
+        method="POST" enctype="multipart/form-data">
+        <!-- iniciando o formulario  -->
+
+        <input placeholder="Nome" type="text" name="nome-cliente">
+        <input placeholder="Telefone" type="tel" name="tel-cliente">
+        <input placeholder="Email" type="email" name="email-cliente">
+        <textarea placeholder="Digite o seu problema aqui..." name="duvida-cliente"> </textarea>
+        <button type="submit" class="botao-solicitar-orcamento"> Pedir orçamento </button>
+        <!-- o tipo do botao como submit significa que esse botao enviara as informações a um formulario usando o link inf-->
+
+    </form>
 
 </body>
 
