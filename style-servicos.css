@@ -255,7 +255,7 @@ textarea {
     /*bordas arredondadas */
     border: 1px solid gray;
     /*1º espessura da borda, 2º tipo, 3º cor */
-    padding-left: 4px;
+    padding-left: 2px;
     /* espaçamento interno para afastar o texto da borda do input */
     outline-color: #18d80f;
     /*cor do input ao clicar nele para digitar*/
