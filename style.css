@@ -151,6 +151,7 @@ p {
     color: white;
     font-size: 24px;
     cursor: pointer;
+    text-decoration: none; /* tira a linha que aparece em baixo dos links */
 
 
 }
@@ -248,5 +249,59 @@ textarea {
     /*cria o  bacgroun da mascara com gradiente  */
     transition: visibility 1s ease-in-out;
     /* 1º em qual evento ele vai aplicar / 2º qual o tempo da transição / 3º qual o tipo da transição */
+
+}
+
+/*Aplicando responsividade com media query, vamos criar pontos e identificar onde o site quebra */
+/*sempre deixar o media query no final do css */
+/*MAX --> valor menos que Npx, aplica o css do MEDIA */
+/*MIN --> valor maior que Npx, aplica o css do MEDIA */
+
+@media(max-width:1100px) {
+    /*aqui vamos tratar considerando a largura, ao atingir o valor que especificamos ele vai mudar o nosso css */
+
+    p {
+        /*retiramos o paragrafo */
+        display: none;
+    }
+
+    .caixa-mae {
+        flex-direction: column;
+        /* alterando a direçaõ das imagens para ficar uma abaixo da outra */
+        padding: 10px;
+        /* ajustando o  espaço entre o conteúdo do elemento e suas bordas */
+        justify-content: flex-start; /*alinhar os itens flexíveis no início do contêiner */
+
+    }
+
+    .caixa-principal {
+        /*vamos deixar os intens alinhados  */
+        display: flex;
+        align-items: center;
+        /*alinhar itens ao centro */
+        flex-direction: column;
+        /* altera a direção dos intens, deixando um abaixo do outro */
+    }
+
+    .imagem-mario-luigi{
+        width: 80vw; /*vai ocupar 80% da tela */
+        height: auto; /*altura automatica */
+    }
+
+    .header {
+        margin: 10px; /*reduzimos a margem da classe header (div onde ficam os links) */
+        display: flex;
+        align-items: center; /* alinha os itens ao centro (vertical) */
+        justify-content: center; /* alinha os itens ao centro (horizontal) */
+    }
+
+    .header img{
+        display: none; /* retiramos a imagem que tem do lado dos links  */
+    }
+
+    .header a{
+        font-size: 20px; /*alterando o tamanho da fonte */
+
+    }
 
 }

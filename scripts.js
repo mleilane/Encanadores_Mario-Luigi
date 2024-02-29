@@ -21,5 +21,21 @@ function esconderForm() {
     formulario.style.transform = "translatex(0)"
     mascara.style.visibility = "hidden"
 
+} 
 
-} px
+//html serviços
+
+
+// Selecione todos os elementos <h2> dentro da lista de serviços
+const titulosServicos = document.querySelectorAll('.lista-servicos h2');
+
+// Para cada título de serviço, adicione um event listener para o clique
+titulosServicos.forEach(titulo => {
+    titulo.addEventListener('click', () => {
+        // Selecione o elemento <p> irmão do título clicado
+        const descricao = titulo.nextElementSibling;
+
+        // Alternar a classe 'ativo' para mostrar ou ocultar a descrição
+        descricao.classList.toggle('ativo');
+    });
+});

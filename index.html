@@ -13,9 +13,9 @@
 
     <div class="header">
         <img src="./img/logo-header.png" alt="logo mario">
-        <a> Home </a>
-        <a> Nossos Serviços</a>
-        <a> Fale Conosco</a>
+        <a href="index.html"> Home </a>
+        <a href="nossos-servico.html"> Nossos Serviços</a> <!-- vinculamos o html dos serviços a esse link-->
+        <a href="javascript:void(0);" onclick="mostrarForm()"> Fale Conosco</a> <!--vinculamos o link "fale conosco" ao formulario -->
     </div>
 
     <div class="caixa-mae">
@@ -53,7 +53,7 @@
 
     <div class="mascara-formulario" onclick="esconderForm()"> </div>
 
-    <form class="formulario-fale-conosco" action="https://formcarry.com/s/ftwWdc5NE9k" method="POST"
+    <form id="formularioFaleConosco"  class="formulario-fale-conosco" action="https://formcarry.com/s/ftwWdc5NE9k" method="POST"
         enctype="multipart/form-data">
         <!-- iniciando o formulario  -->
 

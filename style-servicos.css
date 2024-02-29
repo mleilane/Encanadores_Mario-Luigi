@@ -1,0 +1,169 @@
+* {
+    /* estilos globai - estamos retirando os estilos aplicados por padrão pelo navegador */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+.header {
+    display: flex;
+    /*por padrão ele coloca os itens um do lado do outro  */
+    align-items: center;
+    /* alinha os itens ao centro */
+    gap: 30px;
+    /*distanciamento entre os itens  */
+    margin: 30px;
+ 
+
+}
+
+.titulo-geral-servicos h1{
+    margin: 0;
+}
+
+
+.titulo-geral-servicos{
+
+    color: white;
+    display: flex; /* Adiciona um display flex para permitir o alinhamento */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    margin: 0; /* Define a margem como 0 para remover qualquer espaçamento adicional */
+
+
+}
+
+
+
+
+.caixa-video {
+    position: fixed;
+    /* Define a posição como fixa */
+    top: 0;
+    /* Posiciona a caixa no topo da tela */
+    left: 0;
+    /* Posiciona a caixa no canto esquerdo da tela */
+    width: 100vw;
+    /* Define a largura como 100% da largura da viewport */
+    height: 100vh;
+    /* Define a altura como 100% da altura da viewport */
+    z-index: -1;
+    /* Coloca a caixa atrás dos demais elementos */
+}
+
+.caixa-video video {
+    width: 100%;
+    /* Define a largura do vídeo como 100% da caixa */
+    height: 100%;
+    /* Define a altura do vídeo como 100% da caixa */
+    object-fit: cover;
+    /* Faz com que o vídeo cubra toda a área da caixa mantendo a proporção */
+}
+
+.mascara {
+    height: 100%;
+    /* ajusta a altura e ocupa toda a tela  */
+    width: 100%;
+    /* ajusta a largura e ocupa toda a tela */
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    /* cria um gradiente  */
+
+    position: fixed;
+    /* mantem uma posição fixa */
+    top: 0;
+    /*define que a posição inicia no topo  */
+
+
+}
+
+.header img {
+    height: 60px;
+    /*largura da imagem  */
+
+}
+
+.header a {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    text-decoration: none; /* tira a linha que aparece em baixo dos links */
+
+}
+
+.body-content {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo na horizontal */
+    align-items: center; /* Centraliza o conteúdo na vertical */
+    min-height: 80vh; /* Faz com que o corpo da página ocupe pelo menos a altura total da tela */
+}
+
+.container {
+    display: flex; /* Define o layout como flexível */
+    flex-direction: row; /* Alinha os elementos em uma coluna */
+    align-items: center; /* Centraliza os elementos na horizontal */
+    justify-content: center; /* Centraliza os elementos na horizontal */
+    width: 100%; /* Ocupa toda a largura disponível */
+    max-width: 1200px; /* Define uma largura máxima para o container */
+    margin: 0 auto; /* Centraliza o container na página */
+    padding: 0 20px; /* Adiciona algum espaçamento interno opcional */
+
+}
+
+.lista-servicos {
+    list-style: none;
+    padding: 0;
+    margin: 0;   
+    width: 500px; /* Defina a largura da lista de serviços */
+    
+    
+  }
+
+  
+  
+  .servico {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 80%; /* Ocupa 80% da largura disponível */
+    background-color: #ccc; 
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 22px;
+    
+  }
+  
+  .servico h2 {
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: 0;
+    transition: opacity 0.3s; /* Adiciona uma transição suave */
+    display: flex; /* Adiciona um display flex para permitir o alinhamento */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    
+
+  }
+
+  .servico:hover {
+    opacity: 0.8; /* Reduz a opacidade ao passar o mouse */
+}
+
+  .servico p {
+    margin-top: 5px;
+    
+    
+
+  }
+
+  /* Adicione uma classe para ocultar o texto por padrão */
+.lista-servicos .ativo {
+    display: none;
+}
+
+  .imagem-mario-luigi {
+    height: 500px;
+    /* ajusta a largra da img */
+
+}
+
