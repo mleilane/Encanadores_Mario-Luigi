@@ -296,8 +296,6 @@ button:hover {
     /* Opacidade ao passar o mouse */
     background-color: green;
     /* Cor de fundo ao passar o mouse */
-
-
 }
 
 .link-whatsapp img {
@@ -372,32 +370,50 @@ button:hover {
     }
 
     .header a {
-        font-size: 20px;
+        font-size: 15px;
         /*alterando o tamanho da fonte */
 
     }
 
     .titulo-geral-servicos h1 {
-        font-size: 22px;
-        margin-top: 70px;
+        font-size: 18px;
+        /*tamanho da fonte */
+        margin-top: 20px;
+        /* margem superior */
+        transform: translateX(53px);
+        /* Move o item 53 pixels para a direita */
     }
 
     .lista-servicos {
-        margin-left: auto;
-        /* Centraliza na horizontal */
-        margin-right: auto;
-        /* Centraliza na horizontal */
-        width: 80vw;
+
+        width: 68vw;
         /* Defina a largura da lista de serviços */
-        max-width: 500px;
+        max-width: 300px;
         /* Defina a largura máxima da lista de serviços */
-        font-size: 20px;
-        margin-top: 40px;
+        font-size: 10px;
+        margin-top: 10px;
         /* Adiciona margem superior */
         margin-bottom: 40px;
         /* Adiciona margem inferior */
-        transform: translateX(78px);
-        /* Move o item 10 pixels para a direita */
+        transform: translateX(40px);
+        /* Move o item 40 pixels para a direita */
+
+    }
+
+    .servico h2 {
+        font-size: 15px;
+        /* tamanho da fonte */
+        font-weight: bold;
+        /*espessura da fonte */
+        margin-top: 0;
+        transition: opacity 0.3s;
+        /* Adiciona uma transição suave */
+        display: flex;
+        /* Adiciona um display flex para permitir o alinhamento */
+        align-items: center;
+        /* Centraliza o conteúdo verticalmente */
+        justify-content: center;
+        /* Centraliza o conteúdo horizontalmente */
 
     }
 }
